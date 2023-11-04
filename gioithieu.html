@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Chào mừng bạn đến với trang web bán hàng của chúng tôi! Chúng tôi tự hào giới thiệu một nền tảng mua sắm trực tuyến đa dạng và đầy đủ, với hàng ngàn sản phẩm phong phú, chất lượng và độc đáo đang chờ đón bạn.
+
+                    Với cam kết đem lại trải nghiệm mua sắm tốt nhất cho khách hàng, chúng tôi luôn đặt lên hàng đầu sự hài lòng và lợi ích của bạn. Trang web của chúng tôi cung cấp một loạt sản phẩm và dịch vụ đa dạng, bao gồm thời trang, điện tử, đồ gia dụng, thực phẩm, và nhiều lĩnh vực khác nữa. Với sự lựa chọn đa dạng và cập nhật thường xuyên, bạn có thể tìm thấy mọi thứ bạn cần tại đây, từ những sản phẩm hàng ngày đến những món đồ độc đáo và thú vị.
+                    <br><br>
+                    Lý do tại sao bạn nên chọn chúng tôi:
+                    <br>
+                    1. Đa dạng sản phẩm: Chúng tôi cung cấp một loạt sản phẩm từ các thương hiệu uy tín và chất lượng, giúp bạn dễ dàng lựa chọn những sản phẩm phù hợp với nhu cầu của bạn.
+                    <br>
+                    2. Giá cả cạnh tranh: Chúng tôi cam kết cung cấp sản phẩm với giá cả cạnh tranh nhất, đảm bảo bạn có được giá trị tốt nhất cho tiền của mình.
+                    <br>
+                    3. Chất lượng đảm bảo: Chúng tôi luôn kiểm tra chất lượng sản phẩm và đảm bảo rằng bạn chỉ nhận được những sản phẩm chất lượng và an toàn.
+                    <br>
+                    4. Dịch vụ khách hàng xuất sắc: Đội ngũ hỗ trợ khách hàng của chúng tôi luôn sẵn sàng hỗ trợ bạn trong mọi thời điểm, giải quyết mọi vấn đề và câu hỏi mà bạn có.
+                    <br>
+                    5. Giao hàng nhanh chóng: Chúng tôi cam kết giao hàng đến tay bạn một cách nhanh chóng và an toàn, giúp bạn tiết kiệm thời gian và công sức.
+                    <br><br>
+                    Hãy tham gia cùng chúng tôi và khám phá thế giới mua sắm đa dạng và tiện lợi. Chúng tôi hy vọng rằng trang web của chúng tôi sẽ trở thành nguồn cung cấp hàng đầu cho mọi nhu cầu của bạn. Cảm ơn bạn đã ghé thăm và mua sắm tại chúng tôi. Chúng tôi rất vui mừng được phục vụ bạn!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
